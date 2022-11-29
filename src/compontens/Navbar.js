@@ -47,7 +47,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Services
+                Locations
               </Link>
             </li>
             <li className="nav-item">
@@ -59,7 +59,15 @@ function Navbar() {
                 Products
               </Link>
             </li>
-
+            <li className="nav-item">
+              <Link
+                to="/sign-up"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Your Blog
+              </Link>
+            </li>
             <li>
               <Link
                 to="/sign-up"

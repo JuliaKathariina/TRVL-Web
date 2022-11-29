@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./Section.css";
-import movie from "../compontens/Pages/video/Sectionmovie.mp4";
+import movie from "../compontens/Pages/video/movie.mp4";
 function Section() {
   return (
     <div className="container">
