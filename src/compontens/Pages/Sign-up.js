@@ -24,25 +24,92 @@ export default function SignUp({ setToken }) {
     setToken(token);
   };
   return (
-    <div className="wrapper-sign">
-      <h1> Please SignUp</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <p>UserName</p>
-          <input type="text" onChange={(e) => setUserName(e.target.value)} />
-        </label>
-        <label>
-          <p> Password</p>
-          <input
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
-        <div>
-          <button type="submit"> Submit</button>
-        </div>
-      </form>
-    </div>
+    <main className="main">
+      <div className="container">
+        <section className="wrapper">
+          <div className="heading">
+            <h1 className="text-large"> Sign In</h1>
+            <p className="text-normal">
+              New User ?
+              <span>
+                <a href="#" className="text-links">
+                  Create a account
+                </a>
+              </span>
+            </p>
+          </div>
+
+          <form
+            onSubmit={handleSubmit}
+            action=""
+            name="signin"
+            className="form"
+          >
+            <div className="input-controll">
+              <label for="text" className="input-label" hidden>
+                UserName
+              </label>
+              <input
+                className="input-flied"
+                type="text"
+                name="text"
+                required
+                id="text"
+                placeholder="UserName"
+                onChange={(e) => setUserName(e.target.value)}
+              />
+            </div>
+            <div className="input-controll">
+              <label for="password" className="input-label" hidden>
+                Password
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="password
+                "
+                className="input-field"
+                placeholder="Password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="input-controll">
+              <a href="#" className="text-links">
+                Forgot Password
+              </a>
+              <button type="submit" className="input-submit">
+                Submit
+              </button>
+            </div>
+          </form>
+          <div className="striped">
+            <span className="method-line"></span>
+            <span className="striped-text">Or</span>
+            <span className="striped-line"></span>
+          </div>
+          <div className="method">
+            <div className="method-controll">
+              <a href="#" className="method-action">
+                <i className="fa-brands fa-google"></i>
+                <span> Sign in with Google</span>
+              </a>
+            </div>
+            <div className="method-controll">
+              <a href="#" className="method-action">
+                <i className="fa-brands fa-facebook-f"></i>
+                <span> Sign in with Facebook</span>
+              </a>
+            </div>
+            <div className="method-controll">
+              <a href="#" className="method-action">
+                <i className="fa-brands fa-apple"></i>
+                <span> Sign in with Apple</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }
 
