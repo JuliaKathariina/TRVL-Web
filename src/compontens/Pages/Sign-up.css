@@ -1,0 +1,82 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 12% auto;
+  max-width: 500px;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.input-controll {
+  border-bottom: 1px solid #0984e3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.input-submit {
+  width: 100%;
+  margin-top: 30px;
+  display: block;
+  background: transparent;
+  border: 1px solid #0984e3;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.input-submit:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#hide1 {
+  display: none;
+}
+
+.eye {
+  position: absolute;
+  right: 1%;
+}
+
+.method {
+  width: 100%;
+  margin-top: 30px;
+  display: block;
+
+  border: 1px solid #0984e3;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.text-log {
+  color: white;
+  margin: 1rem;
+  font-size: 16px;
+}
