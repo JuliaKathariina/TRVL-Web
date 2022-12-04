@@ -1,4 +1,9 @@
-body,
+.background {
+  background-image: url(../images/img-home.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1 {
   margin: 0;
   padding: 0;
