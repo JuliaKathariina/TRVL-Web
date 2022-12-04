@@ -76,6 +76,13 @@ function Navbar() {
               >
                 Sign Up
               </Link>
+              <Link
+                to="dashbaord"
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Dashboard
+              </Link>
             </li>
           </ul>
           {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
