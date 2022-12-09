@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./Sign-up.css";
+import {
+  AiFillFacebook,
+  AiFillGoogleCircle,
+  AiFillApple,
+} from "react-icons/ai";
 
 async function loginUser(credentials) {
   return fetch("http://localhost:8080/signup", {
@@ -75,20 +80,25 @@ export default function SignUp({ setToken }) {
           <div className="method">
             <div className="method-controll">
               <a href="#" className="method-action">
-                <i className="fa-brands fa-google"></i>
-                <span className="text-log"> Sign in with Google</span>
+                <span className="text-log">
+                  <AiFillGoogleCircle />
+                  Sign in with Google
+                </span>
               </a>
             </div>
             <div className="method-controll">
               <a href="#" className="method-action">
-                <i className="fa-brands fa-facebook-f"></i>
-                <span className="text-log"> Sign in with Facebook</span>
+                <span className="text-log">
+                  <AiFillFacebook />
+                  Sign in with Facebook
+                </span>
               </a>
             </div>
             <div className="method-controll">
               <a href="#" className="method-action">
-                <i className="fa-brands fa-apple"></i>
-                <span className="text-log"> Sign in with Apple</span>
+                <span className="text-log">
+                  <AiFillApple /> Sign in with Apple
+                </span>
               </a>
             </div>
           </div>

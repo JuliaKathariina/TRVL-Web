@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { DashProvider } from "./compontens/DashContext";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <DashProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </DashProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
