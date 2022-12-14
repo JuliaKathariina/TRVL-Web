@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import { DashContext } from "../DashContext";
 import { useContext } from "react";
 import ListEntry from "../ListEntry.js";
+
 function YourBlog() {
   const { input, setInput } = useContext(DashContext);
 
@@ -23,6 +24,7 @@ function YourBlog() {
             id={listEntry.id}
             travel={listEntry.travel}
             experiences={listEntry.experiences}
+            value={listEntry.setValues}
             handleRemove={handleRemove}
           ></ListEntry>
         ))}

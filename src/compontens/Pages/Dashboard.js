@@ -5,13 +5,13 @@ import { DashContext } from "../DashContext";
 
 function Dashboard() {
   const { input, setInput } = useContext(DashContext);
-  function appendListEntry(travel, experiences) {
+  function appendListEntry(travel, experiences, setValues) {
     setInput((listEntry) => [
       ...listEntry,
       {
         travel,
         experiences,
-
+        setValues,
         id: Math.random().toString(36).substring(2),
       },
     ]);

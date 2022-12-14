@@ -1,18 +1,27 @@
 import Form from "./Form";
-
+import DatePicker from "react-multi-date-picker";
+import { useState } from "react";
 function FormText({ appendListEntry }) {
   function sendForm(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    const { travel, experiences } = Object.fromEntries(formData);
+    const { travel, experiences, setValues } = Object.fromEntries(formData);
 
-    appendListEntry(travel, experiences);
+    appendListEntry(travel, experiences, setValues);
   }
+
+  const today = new Date();
+  const tomorrow = new Date();
+
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  const [values, setValues] = useState([today, tomorrow]);
 
   return (
     <Form onSubmit={sendForm}>
       <h3>Enter your experiences from your last trip here </h3>
+      <DatePicker multiple value={values} onChange={setValues} />
       <label className="labelinput" htmlfor="travel">
         Travel destination
       </label>
