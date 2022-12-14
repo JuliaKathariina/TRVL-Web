@@ -1,0 +1,27 @@
+.h3 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+buttonsubmit {
+  background-color: white;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  padding: 5;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+labelinput {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: underline black;
+}
+inputfield {
+  display: flex;
+  padding: auto;
+  margin: 10px;
+}

@@ -6,7 +6,7 @@ import Products from "./compontens/Pages/Products";
 import SignUp from "./compontens/Pages/Sign-up";
 import Dashboard from "./compontens/Pages/Dashboard";
 import useToken from "./compontens/useToken";
-
+import YourBlog from "./compontens/Pages/Yourblog.js";
 function App() {
   const { token, setToken } = useToken();
 
@@ -26,6 +26,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/signup" element={<SignUp />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/yourblog" element={<YourBlog />} />
         </Routes>
         <Routes>
           <Route exact path="/dashbaord" element={<Dashboard />} />
