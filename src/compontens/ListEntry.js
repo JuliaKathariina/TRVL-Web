@@ -1,13 +1,13 @@
 import React from "react";
 
-function ListEntry({ id, mantra, category, handleremove }) {
+function ListEntry({ id, travel, experiences, handleRemove }) {
   return (
     <section>
-      <p>{mantra} </p>
+      <p>{travel} </p>
 
-      <p>#{category} </p>
+      <p>#{experiences} </p>
 
-      <button type="button" onClick={() => handleremove(id)}>
+      <button type="button" onClick={() => handleRemove(id)}>
         Delete
       </button>
     </section>

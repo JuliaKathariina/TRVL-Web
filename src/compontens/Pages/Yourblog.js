@@ -21,9 +21,9 @@ function YourBlog() {
           <ListEntry
             key={listEntry.id}
             id={listEntry.id}
-            mantra={listEntry.mantra}
-            category={listEntry.category}
-            onClick={handleRemove}
+            travel={listEntry.travel}
+            experiences={listEntry.experiences}
+            handleRemove={handleRemove}
           ></ListEntry>
         ))}
       </ul>

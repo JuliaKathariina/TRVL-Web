@@ -5,42 +5,42 @@ function FormText({ appendListEntry }) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    const { mantra, category } = Object.fromEntries(formData);
+    const { travel, experiences } = Object.fromEntries(formData);
 
-    appendListEntry(mantra, category);
+    appendListEntry(travel, experiences);
   }
 
   return (
     <Form onSubmit={sendForm}>
       <h3>Enter your experiences from your last trip here </h3>
-      <label className="labelinput" htmlfor="Mantra">
-        lorem
+      <label className="labelinput" htmlfor="travel">
+        Travel destination
       </label>
       <input
         className="inputfield"
         type="text"
-        id="mantra"
-        name="mantra"
+        id="travel"
+        name="travel"
         rows="2"
         maxLength="240"
         required
       ></input>
 
-      <label className="labelinput" htmlfor="Categroy">
-        lorem
+      <label className="labelinput" htmlfor=" experiences">
+        Experiences
       </label>
       <input
         className="inputfield"
         type="text"
-        id="category"
-        name="category"
+        id=" experiences"
+        name=" experiences"
         rows="2"
         maxLength="10"
         required
       ></input>
 
       <button className="buttonsubmit" type="submit">
-        Save 🧘🏽click here for your mantra
+        Save your journey
       </button>
     </Form>
   );
