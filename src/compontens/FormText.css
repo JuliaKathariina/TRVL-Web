@@ -1,10 +1,10 @@
-.h3 {
+.headline_h3 {
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  padding: px;
+  margin-top: 0 px;
 }
 
-buttonsubmit {
+.buttonsubmit {
   background-color: white;
   font-size: 15px;
   text-align: center;
@@ -14,14 +14,17 @@ buttonsubmit {
   text-decoration: underline;
 }
 
-labelinput {
+.labelinput {
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   text-decoration: underline black;
 }
-inputfield {
+.inputfield {
   display: flex;
   padding: auto;
   margin: 10px;
+}
+.datapicker {
+  margin: 0rem;
 }

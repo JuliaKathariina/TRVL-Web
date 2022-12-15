@@ -1,6 +1,7 @@
 import Form from "./Form";
 import DatePicker from "react-multi-date-picker";
 import { useState } from "react";
+import "../compontens/FormText.css";
 function FormText({ appendListEntry }) {
   function sendForm(event) {
     event.preventDefault();
@@ -20,8 +21,15 @@ function FormText({ appendListEntry }) {
 
   return (
     <Form onSubmit={sendForm}>
-      <h3>Enter your experiences from your last trip here </h3>
-      <DatePicker multiple value={values} onChange={setValues} />
+      <h3 className="headline_h3">
+        Enter your experiences from your last trip here{" "}
+      </h3>
+      <DatePicker
+        className="datapicker"
+        multiple
+        value={values}
+        onChange={setValues}
+      />
       <label className="labelinput" htmlfor="travel">
         Travel destination
       </label>
@@ -30,7 +38,7 @@ function FormText({ appendListEntry }) {
         type="text"
         id="travel"
         name="travel"
-        rows="2"
+        rows="6"
         maxLength="240"
         required
       ></input>
